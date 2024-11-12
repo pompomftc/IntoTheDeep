@@ -1,4 +1,14 @@
-## NOTICE
+## POMPOM'S setup of project
+1. check Android studio's version. It must be Android Studio Ladybug (2024.2) or later.
+2. go to File/Settings/Build, Execution, Deployment/Build Tools/Gradle and change gradle directory to .../IntoTheDeep/gradle 
+3. also change Gradle jdk in previously opened settings to 17 version 
+4. close setting, click sync now/try again and have a fun
+
+no need to install another gradle from web or change gradle build settings just follow the steps!!!
+
+follow us on Instagram/Telegram to get in touch with us. Bye!
+
+ ## NOTICE
 
 This repository contains the public FTC SDK for the INTO THE DEEP (2024-2025) competition season.
 
