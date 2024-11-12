@@ -44,6 +44,7 @@ public class MecanumDrive extends LinearOpMode {
             }
             if (toggleDirection)
             {
+
                 leftF.setPower(((-ly+lx+rx)/max)*power);
                 leftD.setPower(((-ly-lx+rx)/max)*power);
                 rightF.setPower(((-ly-lx-rx)/max)*power);
