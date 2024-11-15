@@ -4,7 +4,7 @@ import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.Gamepad;
 
-@TeleOp (name = "GamepadTest")
+@TeleOp (name = "GamepadTest",group = "Test")
 public class GamepadTelemetry extends LinearOpMode {
 
     @Override
@@ -12,14 +12,14 @@ public class GamepadTelemetry extends LinearOpMode {
         waitForStart();
         while(opModeInInit())
         {
-            telemetry.addData("Status:", "initialized");
+            telemetry.addData("Status", "initialized");
             telemetry.update();
         }
         
         while(opModeIsActive())
         {
-            telemetry.addData("Status:", "activated");
-            
+            telemetry.addData("Status", "activated");
+
             gamepadTest(gamepad1, 1);
             gamepadTest(gamepad2, 2);
 
@@ -28,7 +28,7 @@ public class GamepadTelemetry extends LinearOpMode {
     }
     
     public void gamepadTest(Gamepad gamepad, int number){
-
+        telemetry.addLine("");
         telemetry.addData("Gamepad",number);
         telemetry.addData("ID", gamepad.id);
         telemetry.addData("Timestamp", gamepad.timestamp);
@@ -159,7 +159,5 @@ public class GamepadTelemetry extends LinearOpMode {
         if (gamepad.touchpad_finger_2_x != 0) {
             telemetry.addData("Touchpad Finger 2 X", gamepad.touchpad_finger_2_x);
         }
-
-        telemetry.addData("","");
     }
 }
