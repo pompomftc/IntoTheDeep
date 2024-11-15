@@ -6,7 +6,7 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.DcMotorSimple;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 
-@TeleOp(name="MecanumDrive")
+@TeleOp(name="MecanumDrive", group = "TeleOp")
 
 public class MecanumDrive extends LinearOpMode {
     DcMotor leftF,leftD,rightF,rightD;
