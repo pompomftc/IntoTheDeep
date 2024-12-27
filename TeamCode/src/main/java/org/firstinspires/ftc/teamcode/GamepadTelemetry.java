@@ -13,7 +13,6 @@ public class GamepadTelemetry extends LinearOpMode {
         while(opModeInInit())
         {
             telemetry.addData("Status", "initialized");
-            telemetry.update();
         }
         
         while(opModeIsActive())
